@@ -9,7 +9,7 @@ public class TDDtests {
 
     @Test
     void isAlive() {
-        AccessibleHTML.TableElementInfo board = null;
+        Board board;
         assertEquals(board.getCell(0).isAlive());
     }
 
