@@ -9,7 +9,7 @@ public class TDDtests {
 
     @Test
     void isAlive() {
-        Board board;
+        Board board = null;
         assertEquals(board.getCell(0).isAlive());
     }
 
