@@ -28,11 +28,10 @@ public class TDDtests {
                                         {".", ".", ".", "."}
                                     };
 
+
     @Test
     void cell_with_less_than_two_neighbors_die() {
-        Board board1 = new Object();
-        Board board2 = new Object();
-        assertEquals(board1.nextGeneration(), board2);
+        assertEquals(scenarioOneBoardTwo[1][2].nextGeneration(), scenarioOneBoardThree[1][2]);
     }
 
 
