@@ -1,38 +1,47 @@
 
 import org.junit.jupiter.api.Test;
+import org.w3c.dom.html.HTMLFrameSetElement;
+
+import javax.swing.*;
+
+import java.awt.*;
+import java.security.KeyPairGenerator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TDDtests {
-    String[][] scenarioOneBoardOne = {
-                                        {".", ".", ".", "."},
-                                        {".", "*", "*", "."},
-                                        {".", ".", ".", "."},
-                                        {".", ".", ".", "."},
-                                        {".", ".", ".", "."}
-                                    };
+    String[][]boardOneScenarioOne = {
+            {".", ".", ".", ".", "."},
+            {".", "*", "*", ".", "."},
+            {".", ".", ".", ".", "."},
+            {".", ".", ".", ".", "."},
+            {".", ".", ".", ".", "."},
+            {".", ".", ".", ".", "."},
+    };
 
-    String[][] scenarioOneBoardTwo = {
-                                        {".", ".", ".", "."},
-                                        {".", ".", "*", "."},
-                                        {".", ".", ".", "."},
-                                        {".", ".", ".", "."},
-                                        {".", ".", ".", "."}
-                                     };
+    String[][]boardTwoScenarioOne = {
+            {".", ".", ".", ".", "."},
+            {".", ".", "*", ".", "."},
+            {".", ".", ".", ".", "."},
+            {".", ".", ".", ".", "."},
+            {".", ".", ".", ".", "."},
+            {".", ".", ".", ".", "."},
+    };
 
-    String[][] scenarioOneBoardThree = {
-                                        {".", ".", ".", "."},
-                                        {".", ".", ".", "."},
-                                        {".", ".", ".", "."},
-                                        {".", ".", ".", "."},
-                                        {".", ".", ".", "."}
-                                    };
-
+    String[][]boardThreeScenarioOne = {
+            {".", ".", ".", ".", "."},
+            {".", ".", ".", ".", "."},
+            {".", ".", ".", ".", "."},
+            {".", ".", ".", ".", "."},
+            {".", ".", ".", ".", "."},
+            {".", ".", ".", ".", "."},
+    };
 
     @Test
-    void cell_with_less_than_two_neighbors_die() {
-        assertEquals(scenarioOneBoardTwo[1][2].nextGeneration(), scenarioOneBoardThree[1][2]);
+    void initialize_board_to_scenario_one() {
+        assertEquals(board.initialize(), boardOneScenarioOne);
     }
+
 
 
 
