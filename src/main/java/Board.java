@@ -6,5 +6,7 @@ public class Board {
     }
 
 
-
+    public String[][] initialize() {
+        String[][] boardWithCells = new String[rows][cols]
+    }
 }
