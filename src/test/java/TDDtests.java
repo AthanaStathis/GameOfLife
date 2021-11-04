@@ -39,7 +39,7 @@ public class TDDtests {
 
     @Test
     void initialize_board_to_scenario_one() {
-        Board board;
+        Board board = new Board(6, 5);
         assertEquals(board.initialize(), boardOneScenarioOne);
     }
 
