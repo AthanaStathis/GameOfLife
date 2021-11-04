@@ -7,7 +7,8 @@ public class Board {
     private int cols;
 
     public Board(int rows, int cols) {
-        String[][] board = new String[rows][cols];
+        this.rows = rows;
+        this.cols = cols;
     }
 
 
@@ -23,4 +24,5 @@ public class Board {
         }
         return boardWithCells;
     }
+
 }
