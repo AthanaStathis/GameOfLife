@@ -39,7 +39,7 @@ public class TDDtests {
 
     @Test
     void initialize_board_to_scenario_one() {
-        KeyPairGenerator board;
+        Board board;
         assertEquals(board.initialize(), boardOneScenarioOne);
     }
 
